@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: spring-sec
+  datasource:
+    url: jdbc:postgresql://localhost:5432/apiSec
+    username: postgres
+    password: Eneye@chinu1
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+  #security:
+  #  user:
+  #    name: user
+  #    password: username
+
+
+server:
+  port: 8000
+
