@@ -9,6 +9,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Objects;
 
 @Service
@@ -43,5 +44,9 @@ public class UserService {
             return jwtService.generateToken(user);
         }
         return "failure";
+    }
+
+    public List<User> getAllUsers() {
+        return userRepo.findAll();
     }
 }
