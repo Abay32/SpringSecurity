@@ -3,8 +3,8 @@ spring:
     name: spring-sec
   datasource:
     url: jdbc:postgresql://localhost:5432/apiSec
-    username: postgres
-    password: Eneye@chinu1
+    username: <username for postgresql>
+    password: <your password>
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
